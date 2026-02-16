@@ -1,0 +1,14 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="othersGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#othersGrad)"/>
+  <circle cx="340" cy="240" r="50" fill="white" opacity="0.3"/>
+  <circle cx="460" cy="240" r="50" fill="white" opacity="0.3"/>
+  <circle cx="340" cy="360" r="50" fill="white" opacity="0.3"/>
+  <circle cx="460" cy="360" r="50" fill="white" opacity="0.3"/>
+  <text x="400" y="520" font-size="48" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">OTROS</text>
+</svg>

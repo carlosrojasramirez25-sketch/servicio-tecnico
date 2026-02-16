@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import ServicesGrid from "../components/ServicesGrid.astro";
+---
+
+<Layout
+  title="Servicio Técnico Especializado | Reparación de Electrodomésticos Gama Blanca"
+  description="Servicio técnico profesional especializado en reparación de lavadoras, hornos, lavavajillas y frigoríficos. Atención inmediata y presupuesto gratuito."
+>
+  <Navbar />
+  <Hero />
+  <ServicesGrid />
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">TecniMaquita</h3>
+          <p class="text-gray-400">
+            Expertos en reparación de electrodomésticos con más de 10 años de
+            experiencia.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>Reparación de Lavadoras</li>
+            <li>Reparación de Hornos</li>
+            <li>Llenado de refrigerante a Frigoríficos</li>
+            <li>Reparación de Frigoríficos</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>📞 644 259 979</li>
+            <li>📧 info@tecnihouse.es</li>
+            <li>📍 Lima, Perú</li>
+            <li>🕐 Lun-Sab: 09:00-18:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+        <p>
+          &copy; {new Date().getFullYear()} TecniHouse. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+</Layout>

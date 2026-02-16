@@ -1,0 +1,62 @@
+---
+import ServiceCard from "./ServiceCard.astro";
+
+const services = [
+  {
+    title: "LAVADORAS",
+    image: "/services/lavadoras.webp",
+    alt: "Reparación de lavadoras - Servicio técnico especializado",
+  },
+  {
+    title: "MICROONDAS",
+    image: "/services/microondas.jpg",
+    alt: "Reparación de microondas - Servicio técnico especializado",
+  },
+  {
+        title: "FRIGORÍFICOS",
+    image: "/services/refrigeradoras.webp",
+    alt: "Reparación de frigoríficos - Servicio técnico especializado",
+  },
+  {
+    title: "OTROS...",
+    image: "/services/otros.svg",
+    alt: "Reparación de otros electrodomésticos - Servicio técnico especializado",
+  },
+];
+---
+
+<section id="servicios" class="py-20 bg-gradient-to-b from-white to-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col items-center text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-800">
+        Nuestros <span class="text-purple-600">Servicios</span>
+      </h2>
+      <p class="block text-lg text-gray-600 max-w-2xl leading-relaxed p-12">
+        Expertos en reparación de electrodomésticos con más de 10 años de
+        experiencia, ofreciendo soluciones rápidas, seguras y garantizadas para
+        todo tipo de equipos del hogar.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      {
+        services.map((service) => (
+          <ServiceCard
+            title={service.title}
+            image={service.image}
+            alt={service.alt}
+          />
+        ))
+      }
+    </div>
+
+    <div class="text-center mt-12">
+      <a
+        href="tel:+34912345678"
+        class="inline-block bg-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform"
+      >
+        Solicitar Presupuesto Gratuito
+      </a>
+    </div>
+  </div>
+</section>
