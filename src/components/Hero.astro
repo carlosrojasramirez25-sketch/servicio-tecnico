@@ -52,23 +52,23 @@ const slides = [
           <div class="flex flex-col items-center gap-4 max-w-4xl">
             <div>
               <h1
-                class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in"
+                class="text-3xl md:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in"
               >
                 {slide.title}<br />
                 <span
-                  class="text-5xl md:text-7xl bg-linear-to-r from-purple-200 to-white bg-clip-text text-transparent"
+                  class="text-4xl md:text-7xl bg-linear-to-r from-purple-200 to-white bg-clip-text text-transparent"
                 >
                   {slide.subtitle}
                 </span>
               </h1>
-              <p class="text-xl md:text-2xl text-purple-100 font-light">
+              <p class="text-lg md:text-2xl text-purple-100 font-light">
                 {slide.description}
               </p>
             </div>
             
             <a
               href={slide.href}
-              class="inline-block bg-white text-purple-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-purple-50 transition-all duration-300 shadow-2xl hover:shadow-purple-500/50 hover:scale-105 transform"
+              class="inline-block bg-white text-purple-700 px-6 py-3 md:px-8 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-purple-50 transition-all duration-300 shadow-2xl hover:shadow-purple-500/50 hover:scale-105 transform"
             >
               {slide.cta}
             </a>
@@ -79,22 +79,22 @@ const slides = [
   </div>
 
   <!-- Navigation Arrows -->
-  <div class="absolute inset-0 z-30 flex items-center justify-between px-4 pointer-events-none">
+  <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 z-30 flex items-center justify-between px-2 md:px-4 pointer-events-none">
     <button
       id="prev-slide"
-      class="pointer-events-auto p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all duration-300 group"
+      class="pointer-events-auto p-2 md:p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all duration-300 group"
       aria-label="Previous slide"
     >
-      <svg class="w-8 h-8 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg class="w-6 h-6 md:w-8 md:h-8 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
       </svg>
     </button>
     <button
       id="next-slide"
-      class="pointer-events-auto p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all duration-300 group"
+      class="pointer-events-auto p-2 md:p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all duration-300 group"
       aria-label="Next slide"
     >
-      <svg class="w-8 h-8 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg class="w-6 h-6 md:w-8 md:h-8 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
       </svg>
     </button>
